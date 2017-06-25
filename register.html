@@ -107,7 +107,7 @@
           $('#Weee').addClass('alert alert-warning').show();
           $('#Weee1').addClass('alert alert-warning').show();
           $('#Weee2').addClass('alert alert-warning').show();
-          //reset form (todo)
+          $('input[type=text], input[type=email], input[type=password]', 'form').val(null);
           $('#saveModal').modal('hide');          
         }
       });
