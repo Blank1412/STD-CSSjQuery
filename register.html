@@ -30,17 +30,17 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form-group">
-            <input id="Weee" type="text" name="first_name" id="inputFirstName" placeholder="First Name*" class="form-control input-lg"  tabindex="1" required>
+            <input type="text" name="first_name" id="inputFirstName" placeholder="First Name*" class="form-control input-lg"  tabindex="1" required>
           </div>
         </div>
         <div class="col-md-6">
           <div class="form-group">
-            <input id="Weee1" type="text" name="last_name" id="last_name" class="form-control input-lg" id="inputLastName" placeholder="Last Name*" tabindex="2" required>
+            <input type="text" name="last_name" id="last_name" class="form-control input-lg" id="inputLastName" placeholder="Last Name*" tabindex="2" required>
           </div>
         </div>
       </div>
       <div class="form-group">
-        <input id="Weee2" type="email" name="email" id="inputEmail" placeholder="Email Address*" class="form-control input-lg"  tabindex="3" required>
+        <input type="email" name="email" id="inputEmail" placeholder="Email Address*" class="form-control input-lg"  tabindex="3" required>
       </div>
       <div class="form-group">
         <input type="text" id="inputPassword" placeholder="Password*" class="form-control input-lg"  tabindex="4" required>
@@ -104,9 +104,9 @@
         if (msg == 'OK') {
          
           $('#successMsg').removeClass('hide').show();
-          $('#Weee').addClass('alert alert-warning').show();
-          $('#Weee1').addClass('alert alert-warning').show();
-          $('#Weee2').addClass('alert alert-warning').show();
+          $('#inputFirstName').addClass('alert alert-warning').show();
+          $('#last_name').addClass('alert alert-warning').show();
+          $('#inputEmail').addClass('alert alert-warning').show();
           $('input[type=text], input[type=email], input[type=password]', 'form').val(null);
           $('#saveModal').modal('hide');          
         }
